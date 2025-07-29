@@ -1,7 +1,6 @@
 .carroussel {
     display: flex;
     justify-content: center;
-
 }
 
 .btn {
@@ -14,4 +13,15 @@
     color: white;
     font-weight: bold;
 
+}
+
+.swiperDiv {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.swiper {
+    
 }
