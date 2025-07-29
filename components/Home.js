@@ -1,7 +1,5 @@
 import styles from '../styles/Home.module.css';
-
 import Header from "./header/header";
-import Navbar from './header/navbar';
 
 function Home() {
   return (
@@ -13,6 +11,7 @@ function Home() {
         </h1>
         <div className={styles.carroussel}>
           <img src='./femme.jpg'></img>
+          <button className={styles.btn}>En savoir plus</button>
         </div>
       </main>
       </>

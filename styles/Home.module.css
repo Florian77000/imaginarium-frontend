@@ -1,4 +1,17 @@
 .carroussel {
     display: flex;
     justify-content: center;
+
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #7ea99a;
+    border: none;
+    color: white;
+    font-weight: bold;
+
 }
