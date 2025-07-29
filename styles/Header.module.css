@@ -3,7 +3,7 @@
   justify-content: center;
   background-color: red;
   width: 100%;
-  height: 120px;
+  height: 150px;
   position: relative;
   
 }
@@ -22,7 +22,11 @@
   object-fit: cover;
 }
 
-.navbar {
-    background-color: red;
-    height: 50px;
+.navbarLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  background-color: blue;
+  height: 50px;
 }
