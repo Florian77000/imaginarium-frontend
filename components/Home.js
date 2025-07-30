@@ -13,9 +13,6 @@ export default function Home() {
     <>
       <Header />
       <main className={styles.main}>  
-        <h1 className={styles.title}>
-          Welcome to l'imaginarium
-        </h1>
         <div className={styles.swiperDiv}>
         <Swiper
           className={styles.swiper}
