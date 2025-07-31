@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css';
 import Header from "./header/header";
+import Footer from "./Footer";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation,Pagination, Scrollbar, A11y } from 'swiper/modules';
 
@@ -28,7 +29,7 @@ export default function Home() {
         </Swiper> 
         </div>
       </main>
-
+      <Footer />
       
       </>
   );

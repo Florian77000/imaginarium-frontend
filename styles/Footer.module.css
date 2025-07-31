@@ -1,0 +1,34 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    margin-top: 30px;
+    background-color: #7ea99a;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+
+.footerList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textFooter {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    gap: 20px;   
+}
+
+.footerBrands {
+    display: flex;
+    gap: 10px;
+}
+
+.footerBrandsLink:hover {
+    background-color: grey;
+    
+}
