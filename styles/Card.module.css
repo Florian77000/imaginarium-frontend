@@ -1,0 +1,39 @@
+.main {
+    border: 5px solid blue;
+    height: 400px;
+}
+
+.imgCard {
+     display: flex;
+    align-items: center;
+    background-color: yellow;
+    height: 130px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.textCard {
+    background-color: red;
+     height: 130px;
+}
+
+.btnCard {
+    background-color: green;
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
+
+.btn {
+    background-color: #7ea99a;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    
+}
