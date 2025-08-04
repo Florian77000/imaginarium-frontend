@@ -15,7 +15,7 @@ export default function Navbar () {
             <li><Link href=''><a className={styles.navbarText}>Les mères/filles</a></Link></li>
             <li><Link href=''><a className={styles.navbarText}>Les éphémères</a></Link></li>
             <li><Link href=''><a className={styles.navbarText}>Les personnalisables</a></Link></li>
-            <FontAwesomeIcon icon={faUser} size="2xl" style={{color: "#7ea99a",}} />
+            <Link href='../formAddCard'><FontAwesomeIcon icon={faUser} size="2xl" style={{color: "#7ea99a",}} /></Link>
         </div>
         </div>
     )
