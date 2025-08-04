@@ -7,7 +7,8 @@ export default function CardHero () {
                 <img className={styles.img} src='./bracelet.jpg' ></img>
             </div>
             <div className={styles.textCard}>
-                texte
+                <h2 className={styles.text}>Title</h2>
+                <p className={styles.text}>Texte explicatif</p>
             </div>
             <div className={styles.btnCard}>
                 <button className={styles.btn}>bouton</button>

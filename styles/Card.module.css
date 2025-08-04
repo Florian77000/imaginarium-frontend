@@ -1,31 +1,48 @@
 .main {
     border: 5px solid blue;
-    height: 400px;
+    height: 340px;
+    width: 500px;
 }
 
 .imgCard {
-     display: flex;
+    display: flex;
     align-items: center;
     background-color: yellow;
-    height: 130px;
+    height: 110px;
+    margin-left: 20px;
 }
 
 .img {
     width: 100px;
     height: 100px;
-    border-radius: 100px;
+    border-radius: 100px;   
 }
 
 .textCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
     background-color: red;
-     height: 130px;
+     height: 110px;
+     margin-left: 20px;
+}
+
+.title {
+    margin: 0;
+}
+
+.text {
+    margin: 0;
 }
 
 .btnCard {
     background-color: green;
     display: flex;
+    justify-content: end;
     align-items: center;
-    height: 130px;
+    height: 110px;
+    margin-right: 20px;
 }
 
 .btn {
@@ -35,5 +52,4 @@
     color: white;
     border: none;
     border-radius: 20px;
-    
 }
