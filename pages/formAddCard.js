@@ -8,7 +8,15 @@ export default function AddCard () {
      const [price, setPrice] = useState('');
 
      const sendForm  = () => {
-        setTitle ('')
+        fetch('http://localhost:3000/articles/add', {
+            method: 'Post',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                famille:famille,
+                matiere:matiere,
+                price:price,
+            })
+        }).then(response => response.json())
         setFamille ('')
         setMatiere ('')
         setPhoto ('')
