@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css';
 import Header from "./header/header";
 import Footer from "./Footer";
-import Hero from "./CardHero";
+import CardHero from "./CardHero";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation,Pagination, Scrollbar, A11y } from 'swiper/modules';
 
@@ -31,7 +31,14 @@ export default function Home() {
         </div>
       </main>
       <section>
-        <Hero />
+        <div className={styles.title}>
+          <h2>Nouveautés</h2>
+        </div>
+        <CardHero />
+        <div className={styles.title}>
+          <h2>Best sellers</h2>
+        </div>
+        <CardHero />
       </section>
       <Footer />
       

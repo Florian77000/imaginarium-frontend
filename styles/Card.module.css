@@ -1,55 +1,48 @@
 .main {
-    border: 5px solid blue;
     height: 340px;
-    width: 500px;
+    width: 250px;
 }
 
 .imgCard {
     display: flex;
     align-items: center;
-    background-color: yellow;
-    height: 110px;
-    margin-left: 20px;
+    justify-content: center;
+    height: 250px;
+      background-color: rgb(244, 244, 244);
+      border-radius: 20px;
 }
 
 .img {
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;   
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    opacity: 90%;
+    filter: drop-shadow(0px 0px 20px #5e5e5e);
 }
 
-.textCard {
+.priceCard {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    background-color: red;
-     height: 110px;
-     margin-left: 20px;
+    height: 40px;
 }
 
-.title {
-    margin: 0;
-}
-
-.text {
-    margin: 0;
+.price{
+    margin: 5px;
 }
 
 .btnCard {
-    background-color: green;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    height: 110px;
-    margin-right: 20px;
+    height: 40px;
 }
 
 .btn {
     background-color: #7ea99a;
-    padding: 20px;
+    width: 100%;
+    height: 100%;
     font-size: 20px;
     color: white;
     border: none;
     border-radius: 20px;
 }
+
