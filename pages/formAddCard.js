@@ -60,7 +60,7 @@ export default function AddCard () {
             </select>
         </div>
         <div>
-            <button onClick ={() => sendForm()}>Ajouter au panier</button>
+            <button onClick ={() => sendForm()}>Ajouter</button>
         </div>
     </div>
     )
