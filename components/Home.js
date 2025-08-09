@@ -12,29 +12,6 @@ import 'swiper/css/scrollbar'; //Ajoute la navigation par scroll
 import 'swiper/css/pagination'; //Ajoute les points de la navigation
 
 export default function Home() {
-  
-  const [article, setArticle] = useState ([]);
-  
-  useEffect(() => {
-    
-    fetch('http://localhost:3000/articles').then(response => response.json()).then((data) => {
-      setArticle(data.data)
-      });
-      }, 
-      []);
-
-      const watch = article.map((e,i) => {
-        console.log('test', e.famille);
-        return (
-          <div key={i}>
-          <p>{e.famille}</p>
-          <p>{e.matiere}</p>
-          <p>{e.price}</p>
-        </div>
-        ) 
-      })
-
-  
   return (
     <>
       <Header />
@@ -54,12 +31,10 @@ export default function Home() {
         </Swiper> 
         </div>
       </main>
-      <div>{watch}</div>
       <section>
         <div className={styles.title}>
           <h2>Nouveautés</h2>
         </div>
-       
         <CardHero />
         <div className={styles.title}>
           <h2>Best sellers</h2>
