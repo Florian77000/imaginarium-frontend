@@ -16,3 +16,13 @@
     text-align: center;
     position: relative;
 }
+
+.title {
+    margin: 30px;
+}
+
+.cardHero {
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+}

@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import CardHero from "./CardHero";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation,Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { useState, useEffect } from 'react';
 
 import 'swiper/css';
 import 'swiper/css/navigation'; //Ajoute les boutons pour naviguer
@@ -35,11 +34,15 @@ export default function Home() {
         <div className={styles.title}>
           <h2>Nouveautés</h2>
         </div>
-        <CardHero />
+        <div className={styles.cardHero}>
+          <CardHero />
+        </div>
         <div className={styles.title}>
           <h2>Best sellers</h2>
         </div>
-        <CardHero />
+        <div className={styles.cardHero}>
+          <CardHero />
+        </div>
       </section>
       <Footer />
       
