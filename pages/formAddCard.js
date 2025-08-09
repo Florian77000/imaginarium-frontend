@@ -1,7 +1,24 @@
 import {useState} from 'react';
 
-
 export default function AddCard () {
+
+    const matiereOption = [
+        {value : "", label:'choisir la matière'},
+        {value : "pierre", label:'pierre'},
+        {value : "perle", label:'perle'},
+        {value : "pate polymere", label:'pate polymere'},
+    ]
+
+    const familleOption = [
+        {value:'', label:'choisir la famille'},
+        {value:'bracelets', label:'bracelets'},
+        {value:'colliers', label:'colliers'},
+        {value:'boucles d\'oreille', label:'boucles d\'oreille'},
+        {value:'bagues', label:'bagues'},
+        {value:'meres / filles', label:'meres / filles'},
+        {value:'ephemeres', label:'ephemeres'},
+    ]
+
      const [famille, setFamille] = useState('');
      const [matiere, setMatiere] = useState('');
      const [photo, setPhoto] = useState('');
@@ -26,9 +43,21 @@ export default function AddCard () {
     <div>
         <div>
             <input placeholder='photo' onChange={(e) => setPhoto(e.target.value)} value={photo} />
-            <input placeholder='Famille' onChange={(e) => setFamille(e.target.value)} value={famille} />
-            <input placeholder='Matiere' onChange={(e) => setMatiere(e.target.value)} value={matiere} />
+            <select value={famille} onChange={(e) => setFamille(e.target.value)}>
+                {familleOption.map((e,i)=> (
+                    <option key={i} value={e.value}>
+                        {e.label}
+                    </option>
+                ))}
+            </select>
             <input placeholder='Prix' onChange={(e) => setPrice(e.target.value)} value={price} />
+            <select value={matiere} onChange={(e) =>setMatiere(e.target.value)}>
+                {matiereOption.map((e,i) => (
+                    <option key={i} value={e.value}>
+                        {e.label}
+                    </option>
+                ))}
+            </select>
         </div>
         <div>
             <button onClick ={() => sendForm()}>Ajouter au panier</button>
